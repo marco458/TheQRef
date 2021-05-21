@@ -1,0 +1,69 @@
+
+index:
+  url: ""
+  controller: IndexController
+  action: doAction
+
+register:
+  url: Register
+  controller: RegisterController
+  action: doAction
+
+login:
+  url: Home
+  controller: HomeController
+  action: doAction
+
+account:
+  url: Account
+  controller: AccountController
+  action: doAction
+
+
+showImage:
+  url: picture/<name>
+  controller: RetrieveImageController
+  action: doAction
+  regexs:
+    name: "[[:alpha:]]+"
+
+generateQuiz:
+  url: Create
+  controller: CreateQuizController
+  action: doAction
+
+view:
+  url: View
+  controller: ViewController
+  action: doAction
+
+editQuiz:
+  url: Edit/<id>
+  controller: EditController
+  action: doAction
+  regexs:
+    id: "\\d*[0-9]"
+
+solveQuiz:
+  url: Quiz/<id>
+  controller: QuizController
+  action: doAction
+  regexs:
+    id: "\\d*[0-9]"
+
+leaveComment:
+  url: Comment/<id>
+  controller: CommentController
+  action: doAction
+  regexs:
+    id: "\\d*[0-9]"
+
+statistics:
+  url: Statistics
+  controller: StatisticsController
+  action: doAction
+
+challenge:
+  url: Challenge
+  controller: ChallengeController
+  action: doAction
